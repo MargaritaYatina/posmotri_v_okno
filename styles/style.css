@@ -79,6 +79,7 @@ ol {
 }
 
 .content__list{
+  position: relative;
   display: flex;
   flex-direction: column;
   overflow: auto;
@@ -87,6 +88,7 @@ ol {
 }
 
 .content__video-card{
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
