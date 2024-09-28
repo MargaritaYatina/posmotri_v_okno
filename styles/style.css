@@ -41,6 +41,18 @@ ol {
   list-style: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+} 
+
+/*Layout*/
+
 .content{
   display: flex;
   align-items: end;
@@ -79,7 +91,71 @@ ol {
   font-weight: 400;
   line-height: 21.6px;
   text-align: left;
+}
 
+.search-form__fieldset{
+  border: none;
+}
+
+.search-form__label{
+  display: flex;
+  width: fit-content;
+}
+
+.search-form__textfield{
+width: 225px;
+height: 27px;
+gap: 10px;
+border: none;
+border-top: 1px solid white;
+border-bottom: 1px solid white;
+font-family: inherit;
+font-size: inherit;
+border-width: 1px, 0px, 1px, 0px;
+background-color: transparent;
+appearance: none;
+}
+
+.search-form__textfield::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.search-form__checkbox-list{
+  display:flex;
+  gap: 15px;
+}
+
+.search-form__pseudo-checkbox{
+  justify-self: center;
+  align-self: center;
+  width: 19px;
+  height: 19px;
+  border: 1px solid white;
+  margin-right: 8px;
+}
+
+button{
+  cursor: pointer;
+  height: 34px;
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.6px;
+  text-align: center;
+  color: white;
+  background-color: transparent;
+  border-color: #fff;
+  border-width: 1px;
+} 
+
+.search-form__submit-button{
+  align-self: end;
+  width: 194px;
+
+}
+
+.more-button{
+  width: 100%;
 }
 
 /*Right section*/
@@ -101,7 +177,7 @@ ol {
 
 .content__accent{
   color: rgba(84, 80, 80, 1);
-}
+} 
 
 .content__list{
   position: relative;
@@ -152,3 +228,4 @@ ol {
   text-decoration: none;
   color: rgba(255, 255, 255, 1);
 }
+
