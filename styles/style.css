@@ -199,7 +199,6 @@ button {
     flex-direction: column;
     gap: 26px;
     min-width: 399px;
-    min-height: 529px;
 }
 
 .title {
@@ -228,7 +227,6 @@ button {
 }
 
 .content__video-card {
-    position: relative;
     display: flex;
     justify-content: space-between;
 }
